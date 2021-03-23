@@ -1,0 +1,54 @@
+<!-- <div class="card">
+</div>
+
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Parent Component</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p>
+        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+        bred for hunting.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card> -->
+<!-- <div style="border: solid 1px black; padding: 15px">
+  <h1>Parent Component</h1>
+  <app-children
+    [firstName]="firstName"
+    [lastName]="lastName"
+    [siblings]="siblings"
+  ></app-children>
+</div> -->
+
+<!-- Sending from parent to child -->
+<h1>Sending data from parent to child</h1>
+<mat-card>
+  <mat-card-header>
+    <h1>Parent Component</h1>
+  </mat-card-header>
+  <mat-card-content>
+    <app-children [firstName]="firstName" [lastName]="lastName" [siblings]="siblings"></app-children>
+  </mat-card-content>
+</mat-card>
+<!-- Recieving Data from child -->
+<h1>Sending data from child to parent</h1>
+<mat-card>
+  <mat-card-header>
+    <h1>Parent Component</h1>
+  </mat-card-header>
+  <mat-card-content>
+    <!-- @Output()buttonClicked -->
+    <span><b>Value emitted from child event ::--> </b>{{valueFromChild2}}</span>
+    <app-children2 (buttonClicked)="parentEvntHndlr($event)"></app-children2>
+  </mat-card-content>
+</mat-card>
+<!-- <app-children2></app-children2> -->

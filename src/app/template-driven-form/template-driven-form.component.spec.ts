@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ParenttochildrenComponent } from './parenttochildren.component';
+import { TemplateDrivenFormComponent } from './template-driven-form.component';
 
-describe('ParenttochildrenComponent', () => {
-  let component: ParenttochildrenComponent;
-  let fixture: ComponentFixture<ParenttochildrenComponent>;
+describe('TemplateDrivenFormComponent', () => {
+  let component: TemplateDrivenFormComponent;
+  let fixture: ComponentFixture<TemplateDrivenFormComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ParenttochildrenComponent ]
+      declarations: [ TemplateDrivenFormComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ParenttochildrenComponent);
+    fixture = TestBed.createComponent(TemplateDrivenFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

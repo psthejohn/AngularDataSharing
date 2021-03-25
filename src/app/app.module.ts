@@ -7,16 +7,16 @@ import { MatCardModule } from '@angular/material/card';
 
 import { AppComponent } from './app.component';
 import { ParentComponent } from './parent/parent.component';
-import { ChildrenComponent } from './parent/children/children.component';
+import { ChildrentoparentComponent } from './parent/childrentoparent/childrentoparent.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { Children2Component } from './parent/children2/children2.component';
+import { ParenttochildrenComponent } from './parent/parenttochildren/parenttochildren.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ParentComponent,
-    ChildrenComponent,
-    Children2Component
+    ChildrentoparentComponent,
+    ParenttochildrenComponent
   ],
   imports: [
     BrowserModule,

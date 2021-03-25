@@ -5,10 +5,10 @@ import { Input } from '@angular/core';
 
 @Component({
   selector: 'app-children',
-  templateUrl: './children.component.html',
-  styleUrls: ['./children.component.scss']
+  templateUrl: './childrentoparent.component.html',
+  styleUrls: ['./childrentoparent.component.scss']
 })
-export class ChildrenComponent implements OnInit {
+export class ChildrentoparentComponent implements OnInit {
 
   constructor() {
   }

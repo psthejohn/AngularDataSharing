@@ -6,10 +6,10 @@ import { EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-children2',
-  templateUrl: './children2.component.html',
-  styleUrls: ['./children2.component.scss']
+  templateUrl: './parenttochildren.component.html',
+  styleUrls: ['./parenttochildren.component.scss']
 })
-export class Children2Component implements OnInit {
+export class ParenttochildrenComponent implements OnInit {
 
   @Output()
   buttonClicked: EventEmitter<string> = new EventEmitter<string>();
@@ -27,8 +27,6 @@ export class Children2Component implements OnInit {
   }
 
 }
-
-
 
 // Note: The EventEmitter is used with the @output directive to emit custom events synchronously or 
 // asynchronously, and register handlers for those events by subscribing to an instance.

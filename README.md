@@ -6,6 +6,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 I am Working on adding all these functionalities -->
 This project will include everything starting from basic angular data sharing to using apis, Life cycle  hooks, Rxjs, NgRX, Template driven and Reactive Forms, Custom Pipes, Testting beds, Hooks, Lazy Loading, Resolvers, onPush change detection, @ViewChild vs @ContentChild, Dynamic components and ng-template, Directives, @host, @HostBindings, exportAs, State Management, Depenndency Injection and Zones and most importantly securities, routes guards and auth guards. :)
 
+## Tasks Implemented : 
+1. Parent to children data sharing(@Input())
+2. Children to parent data sharing(@Output and EventEmitter())
+3. Service Api(Get all assets from Rest API)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

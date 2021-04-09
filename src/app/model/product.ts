@@ -10,7 +10,6 @@ export class Product {
         public type: string,
         public includes: string) { }
 }
-
 // {
 //     "name": {},
 //     "price": {},

@@ -1,8 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
 import { ParentComponent } from './parent/parent.component';
@@ -15,7 +18,9 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ProductsComponent } from './products/products.component'
+import { ProductsComponent } from './products/products.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component'
 
 @NgModule({
   declarations: [
@@ -26,7 +31,9 @@ import { ProductsComponent } from './products/products.component'
     TemplateDrivenFormComponent,
     HomeComponent,
     LoginComponent,
-    ProductsComponent
+    ProductsComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +42,10 @@ import { ProductsComponent } from './products/products.component'
     MatButtonModule,    // Adding Mat Buttons 
     MatCardModule,      // Adding Mat Cards
     AppRoutingModule,   // Adding routing
-    FormsModule,         // Template Driven Forms
+    FormsModule,        // Template Driven Forms
+    MatToolbarModule,   // Header is Using Toolbar
+    MatIconModule,
+    FlexLayoutModule,   // Responsive flex-shorhands
     HttpClientModule
   ],
   providers: [],

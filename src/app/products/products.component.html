@@ -1,7 +1,6 @@
-<table class="table table-bordered">
+<!-- <table class="table table-bordered">
     <thead>
         <tr>
-
             <th scope="col">Name</th>
             <th scope="col">Price</th>
             <th scope="col">Dimensions</th>
@@ -18,7 +17,7 @@
             <td>{{product.name}}</td>
             <td>{{product.price}}</td>
             <td>{{product.dimensions}}</td>
-            <td>{{product.images}}</td>
+            <td><img src={{product.images}}></td>
             <td>{{product.availability}}</td>
             <td>{{product.wood}}</td>
             <td>{{product.material}}</td>
@@ -26,4 +25,27 @@
             <td>{{product.includes}}</td>
         </tr>
     </tbody>
-</table>
+</table> -->
+<div fxLayout="row wrap" fxLayoutAlign="center" fxFlexOffset.lg="20%">
+    <div *ngFor="let product of products" fxFlex="25%" fxFlex.xs="50%" fxFlex.sm="33%" style="margin-bottom:10px; padding:20px;">
+        <mat-card>
+            <!-- <mat-card-header>
+                <h3>Sample Header</h3>
+            </mat-card-header> -->
+            <mat-card-title>
+                {{product.name}}
+            </mat-card-title>
+            <mat-card-subtitle>
+                {{product.wood}}
+            </mat-card-subtitle>
+            <img mat-card-image src={{product.images}}>
+            <mat-card-content>
+                {{product.type}}
+            </mat-card-content>
+            <mat-card-actions>Sample Card Actions</mat-card-actions>
+            <mat-card-footer>
+                {{product.price}}
+            </mat-card-footer>
+        </mat-card>
+    </div>
+</div>
